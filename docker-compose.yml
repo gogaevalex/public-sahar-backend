@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+    backend:
+        restart: always
+        container_name: neprotiv-vpn
+        build:
+            context: ./
+        ports:
+            - 4000:4000
